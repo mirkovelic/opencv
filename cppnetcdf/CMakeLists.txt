@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( cppnetcdf)
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( cppnetcdf cppnetcdf.cpp )
+target_link_libraries( cppnetcdf ${OpenCV_LIBS} )
+target_link_libraries( cppnetcdf netcdf )
