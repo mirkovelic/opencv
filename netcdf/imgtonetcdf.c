@@ -124,7 +124,7 @@ int main(int argc, char *argv[])
 
   max=0;
   //filter(height*width, dataD, max);
-
+ // add a comment...
   err = nc_create("test.nc", NC_CLOBBER|NC_NETCDF4, &ncid); CHKERR(err);
   err = nc_def_dim(ncid, "row", height, &dimids[0]);CHKERR(err);
   err = nc_def_dim(ncid, "col", width,  &dimids[1]); CHKERR(err);
